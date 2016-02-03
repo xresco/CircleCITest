@@ -20,6 +20,6 @@ dependencies:
        - echo y | android update sdk --no-ui --all --filter build-tools-23.0.2
 
 test:
-    override:
-        - (./gradlew assemble):
-            timeout: 360
+      override:
+        - ./gradlew assembleRelease
+        - cp -r /home/ubuntu/CircleCiTest/app/build/outputs $CIRCLE_ARTIFACTS
