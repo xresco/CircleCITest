@@ -21,4 +21,4 @@ dependencies:
 test:
       override:
         - ./gradlew assembleRelease
-        - cp -r CircleCiTest/build/outputs $CIRCLE_ARTIFACTS
+        - cp -r app/build/outputs $CIRCLE_ARTIFACTS
